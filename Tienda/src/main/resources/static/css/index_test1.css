@@ -1,7 +1,7 @@
 /* 
     box-sizing: content-box y border-box     
 */
-.block {
+.block{
     background-color: purple;
     border: 20px solid blue;
     padding: 20px;
@@ -10,14 +10,14 @@
     box-sizing: border-box;
 }
 
-.static {
+.static{
     position: static;
     border: 3px solid green;
     top: 400px;
     left: 500px;
 }
 
-.relative {
+.relative{
     position: relative;
     border: 3px solid green;
     top: 400px;
@@ -26,33 +26,20 @@
     height: 400px;
 }
 
-.fixed {
+.fixed{
     position: fixed;
     border: 3px solid green;
     top: 150px;
     left: 50px;
     width: 100px;
-    height: 100px;
+    height: 100px;  
 }
 
-.absolute {
+.absolute{
     position: absolute;
     border: 3px solid green;
     top: 80px;
     left: 50px;
     width: 100px;
-    height: 100px;
-}
-
-.cuadrado {
-    width: 200px;
-    height: 200px;
-    background: #aaa;
-    margin-bottom: 20px;
-    display: inline-block;
-}
-
-dssd
-a {
-    display: block;
+    height: 100px;  
 }

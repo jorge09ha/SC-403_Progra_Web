@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Curso Progra</title>
-        <link rel="stylesheet" href="css/index.css"/>
+<head>
+    <title>Curso Progra</title>
+    <link rel="stylesheet" href="css/index.css" />
 
-    </head>
+</head>
 
-    <!-- SEO (search engine optimazation) -->
+<!---------------------------- SEO (search engine optimazation) ------------------------------------------------->
 
-    <body>
+<body>
+    <!------------------------ Aqui abre Box-Modelo (content, padding, marggin, border) --------------------->
+    <div class='block'>
+        <h1>BLOQUE</h1>
+    </div>
+    <!------------------------ Aqui cierra Box-Modelo ------------------------------------------------------->
 
-        <div class='block'>
-            <h1>BLOQUE</h1>
-        </div>
+    <!------------------------ Aprendimos posicionamiento de etiquetas (relative, static, fixed, absolute) -->
+    <div class='static'>ESTO ES ESTATICO</div>
 
-        <!-- No es afectado por width y height -->
-        <div class='static'>ESTO ES ESTATICO</div>
-        <!-- Si  afecta el width y height -->
-        <div class='relative'>ESTO ES RELATIVO
-            <div class='absolute'>ESTO ES ABSOLUTO</div>
-        </div>
-        <!-- Si  afecta y se ancla al punto de vista del usuario -->
-        <div class='fixed'>ESTO ES FIXED</div>
-        <!-- Se pociciona segun el padre directo (Sobre) -->
+    <div class='relative'>ESTO ES RELATIVO
         <div class='absolute'>ESTO ES ABSOLUTO</div>
+    </div>
 
-        <!-- Division, section, article, nav, main, aside... -->
-        <div>
-            <!--  h# = Heading (Son los titulos y subtitulos) -->
-            <h1>Titulo 1</h1>
-            <h2>Titulo 2</h2>
-            <h3>Titulo 3</h3>
-            <h4>Titulo 4</h4>
-            <h5>Titulo 5</h5>
-            <h6>Titulo 6</h6>
-        </div>
+    <div class='fixed'>ESTO ES FIXED</div>
+    <div class='absolute'>ESTO ES ABSOLUTO</div>
+    <!------------------------ Aqui cierra posiciomaniento -------------------------------------------------->
 
-        <!-- Secciones -->
-        <section>
-            <!-- Parrafo -->
-            <p>Esto es un Parrafo</p>
+    <!------------------------ Aprendimos sobre Display ----------------------------------------------------->
+    <div class="cuadrado"></div>
+    <div class="cuadrado"></div>
+    <div class="cuadrado"></div>
+    <a href="">HOLA Mundo</a>
+    <a href="">HOLA Mundo</a>
+    <!------------------------ Aqui cierra Display ---------------------------------------------------------->
+    <!-- Division, section, article, nav, main, aside... -->
+    <div>
+        <!--  h# = Heading (Son los titulos y subtitulos) -->
+        <h1>Titulo 1</h1>
+        <h2>Titulo 2</h2>
+        <h3>Titulo 3</h3>
+        <h4>Titulo 4</h4>
+        <h5>Titulo 5</h5>
+        <h6>Titulo 6</h6>
+    </div>
 
-            <!-- Unordered list (Lista desordenado) -->
-            <ul>
-                <li>first</li>
-                <li>second</li>
-                <li>third</li>
-            </ul>
-        </section>
+    <!-- Secciones -->
+    <section>
+        <!-- Parrafo -->
+        <p>Esto es un Parrafo</p>
 
-        <!-- Ordered list (Lista ordenada) -->
-        <ol>
+        <!-- Unordered list (Lista desordenado) -->
+        <ul>
             <li>first</li>
             <li>second</li>
             <li>third</li>
-        </ol>
+        </ul>
+    </section>
 
-        <!-- Hyperlik (Enlaces)-->
-        <a href="home.html">HOME</a> <!-- Relativos -->
-        <a href="https://fonts.google.com/knowledge">Fonts</a> <!-- Absolutos -->
+    <!-- Ordered list (Lista ordenada) -->
+    <ol>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ol>
 
-        <div>
-            <!-- Para colocar imagenes -->
-            <img src="images/instagram.png" alt="instagram"/>
-            <img src="images/tik-tok.png" alt="tik-tok"/>
-            <img src="images/whatsapp.png" alt="whatsapp"/>
-        </div>
+    <!-- Hyperlik (Enlaces)-->
+    <a href="home.html">HOME</a> <!-- Relativos -->
+    <a href="https://fonts.google.com/knowledge">Fonts</a> <!-- Absolutos -->
 
-    </body>
+    <div>
+        <!-- Para colocar imagenes -->
+        <img src="images/instagram.png" alt="instagram" />
+        <img src="images/tik-tok.png" alt="tik-tok" />
+        <img src="images/whatsapp.png" alt="whatsapp" />
+    </div>
+</body>
 
 </html>
