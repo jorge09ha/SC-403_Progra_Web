@@ -28,9 +28,9 @@ public class PersonaController {
     @GetMapping("/persona")
     public String index(Model model) {
         List<Persona> listaPersona = personaService.getAllPersona();
-        model.addAttribute("titulo", "Tabla Persona");
-        model.addAttribute("persona", listaPersona);
-        return "persona";
+        model.addAttribute("titulo", "Tabla Personas");
+        model.addAttribute("personas", listaPersona);
+        return "personas";
     }
 
     @GetMapping("/personaN")
