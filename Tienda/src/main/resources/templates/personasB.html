@@ -23,6 +23,9 @@
                     </div>
             </div>
             <!---Agregar-->
+            <div class="limpiar">
+                <button class="btn" style="background: #000f9f; color: white" type="button" onclick="window.location.href = '/persona'">LIMPIAR</button>
+            </div>
             <div class="agregar">
                 <button class="btn btn-success" type="button" onclick="window.location.href = '/personaN'">Agregar</button>
             </div>
@@ -43,7 +46,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                <th:block th:each="user : ${personas}">
+                <th:block th:each="user : ${apellido}">
                     <tr >
                         <td th:text="${user.getNombre}"></td>
                         <td th:text="${user.getApellido1}"></td>
