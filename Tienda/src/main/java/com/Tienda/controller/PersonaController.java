@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
@@ -48,15 +50,23 @@ public class PersonaController {
         personaService.savePersona(persona);
         return "redirect:/persona";
     }
-    
+
     @GetMapping("/editPersona/{id}")
-    public String editarPersona(@PathVariable("id") Long idPersona, Model model){
+    public String editarPersona(@PathVariable("id") Long idPersona, Model model) {
         Persona persona = personaService.getPersonaById(idPersona);
         List<Pais> listaPaises = paisService.listCountry();
         model.addAttribute("titulo", "Editar Persona");
         model.addAttribute("persona", persona);
         model.addAttribute("paises", listaPaises);
         return "crear";
-    } 
+    }
+
+    @GetMapping("/search")
+    public ModelAndView searchByName(@RequestParam("apellido1") String apellido1) {
+        List<Persona> apellido = personaService.findByApellido1(apellido1);
+        ModelAndView modelAndView = new ModelAndView("personas1");
+        modelAndView.addObject("apellido", apellido);
+        return modelAndView;
+    }
 
 }

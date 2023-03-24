@@ -19,4 +19,7 @@ public interface IPersonaService {
 
     public void delete(long id);
 
+    public List<Persona> findByApellido1(String apellido1);
+
+    
 }
