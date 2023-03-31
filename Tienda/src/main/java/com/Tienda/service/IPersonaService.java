@@ -18,6 +18,8 @@ public interface IPersonaService {
     public void savePersona(Persona persona);
 
     public void delete(long id);
+    
+    public Persona findByNombre(String nombre);
 
     public List<Persona> findByApellido1(String apellido1);
 
