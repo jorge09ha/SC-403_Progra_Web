@@ -32,6 +32,7 @@ public class PersonaController {
         model.addAttribute("titulo", "Tabla Personas");
         model.addAttribute("personas", listaPersona);
         return "personas";
+        
     }
 
     @GetMapping("/personaN")
